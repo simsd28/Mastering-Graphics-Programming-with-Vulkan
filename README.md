@@ -1,94 +1,123 @@
-# Mastering Graphics Programming with Vulkan
+<a href="https://www.packtpub.com/en-us/unlock"><img src="https://drive.google.com/uc?export=view&id=1lQCTQQ8iV5pGuPA1n5wuds-3pwJi0OD_"></a>
+<h1 align="center">
+Mastering Graphics Programming With Vulkan, Second Edition</h1>
+<p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/mastering-graphics-programming-with-vulkan-second-edition/9781806116379"> Mastering Graphics Programming With Vulkan, Second Edition</a>, published by Packt.
+</p>
 
-<a href="https://www.packtpub.com/product/mastering-graphics-programming-with-vulkan/9781803244792?utm_source=github&utm_medium=repository&utm_campaign=9781803244792"><img src="https://static.packt-cdn.com/products/9781803244792/cover/smaller" alt="" height="256px" align="right"></a>
+<h2 align="center">
+Develop a modern rendering engine featuring GPU-driven rendering and ray tracing
+</h2>
+<p align="center">
+Gabriel Sassone, Marco Castorina</p>
 
-This is the code repository for [Mastering Graphics Programming with Vulkan](https://www.packtpub.com/product/mastering-graphics-programming-with-vulkan/9781803244792?utm_source=github&utm_medium=repository&utm_campaign=9781803244792), published by Packt.
+<p align="center">
+   <a href="" alt="Discord" title="Learn more on the Discord server"><img width="32px" src="https://cliply.co/wp-content/uploads/2021/08/372108630_DISCORD_LOGO_400.gif"/></a>
+  &#8287;&#8287;&#8287;&#8287;&#8287;
+  <a href="https://packt.link/free-ebook/9781806116379"><img width="32px" alt="Free PDF" title="Free PDF" src="https://cdn-icons-png.flaticon.com/512/4726/4726010.png"/></a>
+ &#8287;&#8287;&#8287;&#8287;&#8287;
+  <a href="https://packt.link/gbp/9781806116379"><img width="32px" alt="Graphic Bundle" title="Graphic Bundle" src="https://cdn-icons-png.flaticon.com/512/2659/2659360.png"/></a>
+  &#8287;&#8287;&#8287;&#8287;&#8287;
+   <a href=""><img width="32px" alt="Amazon" title="Get your copy" src="https://cdn-icons-png.flaticon.com/512/15466/15466027.png"/></a>
+  &#8287;&#8287;&#8287;&#8287;&#8287;
+</p>
+<details open> 
+  <summary><h2>About the book</summary>
+<a href="https://www.packtpub.com/en-us/product/mastering-graphics-programming-with-vulkan-second-edition/9781806116379">
+<img src="https://content.packt.com/B34102/cover_image_small.jpg" alt="Mastering Graphics Programming With Vulkan, Second Edition" height="256px" align="right">
+</a>
 
-**Develop a modern rendering engine from first principles to state-of-the-art techniques**
+Building a modern rendering engine can feel overwhelming, especially with the rapid evolution of graphics APIs and techniques. Some developers struggle to bridge the gap between basic Vulkan tutorials and the advanced systems used in professional engines. This book tackles this challenge by guiding you through the design and implementation of a modern rendering engine using Vulkan’s latest features.
+You’ll gain clarity and confidence working with the API thanks to a framework that strips away the boilerplate while preserving Vulkan’s concepts. As you progress, you’ll explore advanced Vulkan features like descriptor indexing, mesh shaders, and async compute for performance and flexibility. You’ll also use frame graphs to build a rendering architecture designed to scale and simplify resource management. Through clear explanations and hands-on examples, you’ll explore modern rendering techniques such as GPU-driven rendering, real-time ray tracing, and neural rendering approaches that are at the forefront of modern rendering techniques.
+Written by two experienced graphics programmers, this book combines theory with implementation-focused guidance to help you gain production-ready skills. By the end, you’ll not only understand the Vulkan API at a deeper level but also have the knowledge to design and build your own modern renderer.</details>
+<details open> 
+  <summary><h2>Key Learnings</summary>
+<ul>
 
-## What is this book about?
-Vulkan is now an established and flexible multi-platform graphics API. It has been adopted in many industries, including game development, medical imaging, movie productions, and media playback. Learning Vulkan is a foundational step to understanding how a modern graphics API works, both on desktop and mobile.
+<li>Integrate modern bindless techniques to reduce the complexity of descriptor set management</li>
 
-This book covers the following exciting features:
-* Understand resources management and modern bindless techniques
-* Get comfortable with how a frame graph works and know its  advantages
-* Explore how to render efficiently with many light sources
-* Discover how to integrate variable rate shading
-* Understand the benefits and limitations of temporal anti-aliasing
-* Get to grips with how GPU-driven rendering works
-* Explore and leverage ray tracing to improve render quality
+<li>Design and implement a frame graph to simplify resource management and barrier placement</li>
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1803244798) today!
+<li>Implement a modern GPU driven rendering framework leveraging compute and mesh shaders</li>
 
-<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png"
-alt="https://www.packtpub.com/" border="5" /></a>
+<li>Integrate async compute to improve rendering efficiency</li>
 
-## Instructions and Navigations
-All of the code is organized into folders. For example, chapter2.
+<li>Implement modern rendering techniques, including TAA and volumetric fog</li>
 
-The code has been tested with the following software:
-- Visual Studio 2019 Community Edition 16.11.8 (Windows)
-- gcc 9 (Linux)
-- CMake 3.22.1
-- Vulkan SDK 1.2.198.1 or above
-- SDL version 2.0.18
-- assimp 5.2.2
+<li>Design and implement a streaming system for acceleration structures</li>
 
-### Getting the code
-This repository includes a submodule that makes it easier to get glTF models. To make sure the submodule is initialized properly, run the following command when cloning the repository:
-`git clone --recurse-submodules https://github.com/PacktPublishing/Mastering-Graphics-Programming-with-Vulkan`
+<li>Integrate ray traced shadows and reflections</li>
 
-To download the glTF assets using the bootstrap script, run the following command: `python ./bootstrap.py`
+<li>Implement a neural rendering algorithm</li>
 
-Alternatively, you get manually download the models from https://github.com/KhronosGroup/glTF-Sample-Models. We tested only only a subset of glTF 2.0 models.
+</ul>
 
-### Windows
-We provide a Visual Studio solution containing the code for all chapters, located at `project\RaptorEngine.sln`.
+  </details>
 
-### Linux
-We provide the assimp library as part of this repo, while the SDL library has to be installed manually. On Debian and Ubuntu this can be done as follows:
-`sudo apt install libsdl2-dev`
+<details open> 
+  <summary><h2>Chapters</summary>
+     <img src="https://cliply.co/wp-content/uploads/2020/02/372002150_DOCUMENTS_400px.gif" alt="Unity Cookbook, Fifth Edition" height="556px" align="right">
+<ol>
 
-Assuming you unpacked the Vulkan SDK in `~/vulkan/1.2.198.1`, you have to add the following lines to your `.bashrc` file:
-```
-export VULKAN_SDK=~/vulkan/1.2.198.1/x86_64
-export PATH=$VULKAN_SDK/bin:$PATH
-export LD_LIBRARY_PATH=$VULKAN_SDK/lib:$LD_LIBRARY_PATH
-export VK_LAYER_PATH=$VULKAN_SDK/etc/vulkan/explicit_layer.d
-```
+  <li>Introducing the Raptor Engine</li>
 
-To generate the Make file, run the following command:
-`cmake -B build -DCMAKE_BUILD_TYPE=Debug`
+  <li>Improving Pipelines and Descriptors Management</li>
 
-To build a given chapter, run the following command:
-`cmake --build build --target Chapter1 -- -j 4`
+  <li>Implementing a Frame Graph</li>
 
-**Following is what you need for this book:**
-This book is for professional graphics and game developers who want to gain in-depth knowledge about how to write a modern and performant rendering engine in Vulkan. Familiarity with basic concepts of graphics programming (i.e. matrices, vectors, etc.) and fundamental knowledge of Vulkan are required.
+  <li>Unlocking Async Compute</li>
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-15).
-### Software and Hardware List
-| Chapter | Software required | OS required |
-| -------- | ------------------------------------ | ----------------------------------- |
-| 1-15 | Vulkan 1.2 | Windows or Linux |
+  <li>GPU-Driven Rendering</li>
 
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://packt.link/ht2jV).
+  <li>Animating Meshlets</li>
 
-### Related products
-* 3D Graphics Rendering Cookbook [[Packt]](https://www.packtpub.com/product/3d-graphics-rendering-cookbook/9781838986193?utm_source=github&utm_medium=repository&utm_campaign=9781838986193) [[Amazon]](https://www.amazon.com/dp/1838986197)
+  <li>Rendering Many Lights with Clustered Deferred Rendering</li>
 
-* Vulkan Cookbook [[Packt]](https://www.packtpub.com/product/vulkan-cookbook/9781786468154?utm_source=github&utm_medium=repository&utm_campaign=9781786468154) [[Amazon]](https://www.amazon.com/dp/1786468158)
+  <li>Adding Shadows Using Mesh Shaders</li>
 
-## Errata 
- * Page 6 (Almost at the end of the page):  **$ cmake --build build --target chapter1 -- -j 4** _should be_ **$ cmake --build build --target Chapter1 -- -j 4**
+  <li>Adding Volumetric Fog</li>
 
-## Get to Know the Authors
-**Marco Castorina** first got familiar with Vulkan while working as a driver developer at Samsung. Later he developed a 2D and 3D renderer in Vulkan from scratch for a leading media-server company. He recently joined the games graphics performance team at AMD. In his spare time, he keeps up to date with the latest techniques in real-time graphics. He also likes cooking and playing
-guitar.
+  <li>Temporal Anti-Aliasing</li>
 
-**Gabriel Sassone** is a rendering enthusiast currently working as a Principal Rendering Engineer at Multiplayer Group. Previously working for Avalanche Studios, where his first contact with Vulkan happened, where they developed the Vulkan layer for the proprietary Apex Engine and its Google Stadia Port. He previously worked at ReadyAtDawn, Codemasters, FrameStudios, and some non-gaming tech companies. His spare time is filled with music and rendering, gaming, and outdoor activities.
+  <li>Getting Started with Ray Tracing</li>
 
-### Download a free PDF
+  <li>Revisiting Shadows with Ray Tracing</li>
 
- <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
-<p align="center"> <a href="https://packt.link/free-ebook/9781803244792">https://packt.link/free-ebook/9781803244792 </a> </p>
+  <li>Implementing ReSTIR GI</li>
+
+  <li>Adding Reflections with Ray Tracing</li>
+
+  <li>Neural Rendering</li>
+
+</ol>
+
+</details>
+
+
+<details open> 
+  <summary><h2>Requirements for this book</summary>
+To be filled
+  </details>
+    
+
+
+<details> 
+  <summary><h2>Get to know Authors</h2></summary>
+
+_Gabriel Sassone_ Gabriel Sassone is a rendering enthusiast currently working as a Principal Rendering Engineer at Multiplayer Group. Previously working for Avalanche Studios, where his first contact with Vulkan happened, where they developed the Vulkan layer for the proprietary Apex Engine and its Google Stadia Port. He previously worked at ReadyAtDawn, Codemasters, FrameStudios, and some non-gaming tech companies. His spare time is filled with music and rendering, gaming, and outdoor activities.
+
+_Marco Castorina_ Marco Castorina first got familiar with Vulkan while working as a driver developer at Samsung. Later he developed a 2D and 3D renderer in Vulkan from scratch for a leading media-server company. He recently joined the games graphics performance team at AMD. In his spare time, he keeps up to date with the latest techniques in real-time graphics.
+
+
+
+</details>
+<details> 
+  <summary><h2>Other Related Books</h2></summary>
+<ul>
+
+  <li><a href="https://www.packtpub.com/en-us/product/vulkan-3d-graphics-rendering-cookbook-second-edition/9781803248110">Vulkan 3D Graphics Rendering Cookbook, Second Edition</a></li>
+
+  <li><a href="https://www.packtpub.com/en-us/product/the-modern-vulkan-cookbook-first-edition/9781803239989">The Modern Vulkan Cookbook, First Edition</a></li>
+ 
+</ul>
+
+</details>
